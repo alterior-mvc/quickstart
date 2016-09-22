@@ -1,10 +1,14 @@
 {
   "name": "@alterior/quickstart",
   "version": "0.0.0",
+  "private": true,
   "description": "A quick-start API application using Alterior",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && node ./node_modules/mocha/bin/mocha **/*.test.js",
+    "dev-test": "nodemon -e ts --ignore \"*.d.ts\" --exec npm test ",
+    "build": "tsc",
+    "start": "tsc && node main.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +21,12 @@
   },
   "homepage": "https://github.com/alterior-mvc/quickstart#readme",
   "dependencies": {
-    "@alterior/core": "0.0.4",
+    "@alterior/core": "0.0.5",
     "mongodb": "^2.2.10"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "mocha-typescript": "^1.0.10",
+    "supertest": "^2.0.0"
   }
 }
