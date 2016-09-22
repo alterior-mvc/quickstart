@@ -1,0 +1,23 @@
+{
+  "name": "@alterior/quickstart",
+  "version": "0.0.0",
+  "description": "A quick-start API application using Alterior",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alterior-mvc/quickstart.git"
+  },
+  "author": "William Lahti <wilahti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alterior-mvc/quickstart/issues"
+  },
+  "homepage": "https://github.com/alterior-mvc/quickstart#readme",
+  "dependencies": {
+    "@alterior/core": "0.0.4",
+    "mongodb": "^2.2.10"
+  }
+}
