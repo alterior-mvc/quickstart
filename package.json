@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/alterior-mvc/quickstart#readme",
   "dependencies": {
-    "@alterior/core": "0.0.7",
+    "@alterior/core": "0.0.8",
     "mongodb": "^2.2.10"
   },
   "devDependencies": {
