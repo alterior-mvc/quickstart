@@ -1,7 +1,7 @@
-import { Controller, Get, Put, RouteEvent } from '@alterior/core';
+import { WebService, Get, Put, RouteEvent } from '@alterior/web-server';
 
-@Controller()
-export class SampleController {
+@WebService()
+export class SampleService {
 	@Get('/')
 	home(ev : RouteEvent) {
 		return { message: "/ works!" };
@@ -11,4 +11,4 @@ export class SampleController {
 	putHome(ev : RouteEvent) {
 		return { message: "your item is added!" };
 	}
-} 
+}

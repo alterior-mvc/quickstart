@@ -2,6 +2,17 @@
 	"compilerOptions": {
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
-		"target": "es5"
-	}
+		"target": "es2017",
+		"sourceMap": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "dist",
+		"baseUrl": "./src",
+		"paths": {
+			"@app/*": [ "./*" ]
+		}
+	},
+	"include": [
+		"./src/**/*.ts"
+	]
 }
